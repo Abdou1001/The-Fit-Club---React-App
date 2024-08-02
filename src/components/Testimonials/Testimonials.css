@@ -1,0 +1,118 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+    position: relative;
+}
+/* left section */
+.testimonials .left{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    color: #fff;
+}
+.testimonials .left span:first-of-type{
+    color: var(--orange);
+    font-weight: bold;
+}
+.testimonials .left > span:nth-of-type(2),
+.testimonials .left > span:nth-of-type(3){
+    font-size: 3rem;
+    font-weight: bold !important;
+}
+.testimonials .left .info p:first-of-type{
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-align: justify;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+}
+.testimonials .left .info span:last-of-type{
+    display: inline-block;
+    margin: 2rem 0 0;
+}
+/* right section */
+.testimonials .right{
+    flex: 1 1;
+    position: relative;
+}
+.testimonials .right .border-img{
+    position: absolute;
+    right: 9rem;
+    top: .9rem;
+    border: 2px var(--orange) solid;
+    width: 17rem;
+    height: 20rem;
+}
+.testimonials .right .back-img{
+    position: absolute;
+    right: 7rem;
+    top: 4rem;
+    background: var(--planCard);
+    width: 17.25rem;
+    height: 19.25rem;
+}
+.testimonials .right img{
+    height: 20rem;
+    position: absolute;
+    width: 17rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.testimonials .controls{
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    font-size: 2.5rem;
+    color: white;
+}
+.testimonials .controls svg{
+    cursor: pointer;
+    margin: 0rem 1rem;
+}
+
+    /* Media */
+/* media for meduim screen */
+@media (max-width: 992px) {
+    /* img right side */
+    .testimonials .right .border-img {
+        right: 1rem;
+    }
+    .testimonials .right .back-img{
+        right: -1rem;
+    }
+    .testimonials .right img {
+        right: 0rem;
+    }
+}
+/* For Mobile screen */
+@media (max-width: 768px){
+    .testimonials {
+        flex-direction: column;
+    }
+    /* right side */
+    .testimonials .right{
+        position: relative;
+        min-height: 22rem;
+    }
+    /* imgs */
+    .testimonials .right .border-img {
+        left: -10%;
+    }
+    .testimonials .right .back-img {
+        left: 1%;
+    }
+    .testimonials .right img {
+        left: 0%;
+    }
+    /* controls */
+    .testimonials .controls {
+        bottom: -5rem;
+        left: 40%;
+        font-size: 2.5rem;
+        color: white;
+    }
+}

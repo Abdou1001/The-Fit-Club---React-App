@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    height: 20rem;
+    position: relative;
+}
+/* line footer */
+.footer::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* blur effect */
+.blur-red,
+.blur-blue {
+    bottom: 0;
+    filter: blur(200px);
+    height: 12rem;
+    width: 26rem;
+}
+.blur-red{
+    background: red;
+    right: 15%;
+}
+.blur-blue{
+    background: #ff7300;
+    left: 15%;
+}
+/* social */
+.footer .social{
+    display: flex;
+    gap: 4rem;
+}
+.footer .social img{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+}
+.footer .logo img{
+    width: 10rem;
+}
